@@ -27,7 +27,13 @@ jobs:
     - name: Build with Buildozer
       run: |
         buildozer init
+        sed -i 's/#android.api = 33/android.api = 31/g' buildozer.spec
         sed -i 's/android.api = 33/android.api = 31/g' buildozer.spec
+        sed -i 's/#android.sdk = 31/android.sdk = 31/g' buildozer.spec
+        sed -i 's/android.sdk = 31/android.sdk = 31/g' buildozer.spec
+        sed -i 's/#android.min_api = 21/android.min_api = 21/g' buildozer.spec
+        sed -i 's/#android.build_tools_version =.*/android.build_tools_version = 31.0.0/g' buildozer.spec
+        yes | sdkmanager --licenses || true
         buildozer -y android debug
 
     - name: Upload APK

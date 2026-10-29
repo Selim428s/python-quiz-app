@@ -1,0 +1,332 @@
+[
+ {
+  "zorluk": "kolay",
+  "soru": "Ekrana çıktı yazdırmak için hangi fonksiyon kullanılır?",
+  "dogru": "print()",
+  "secenekler": [
+   "print()",
+   "echo()",
+   "write()",
+   "show()"
+  ]
+ },
+ {
+  "zorluk": "kolay",
+  "soru": "Python'da liste hangi parantezle tanımlanır?",
+  "dogru": "[ ]",
+  "secenekler": [
+   "[ ]",
+   "( )",
+   "{ }",
+   "< >"
+  ]
+ },
+ {
+  "zorluk": "kolay",
+  "soru": "Python'da tek satırlık yorum nasıl yazılır?",
+  "dogru": "# yorum",
+  "secenekler": [
+   "# yorum",
+   "// yorum",
+   "/* yorum */",
+   "-- yorum"
+  ]
+ },
+ {
+  "zorluk": "kolay",
+  "soru": "type(5) ifadesinin sonucu nedir?",
+  "dogru": "<class 'int'>",
+  "secenekler": [
+   "<class 'int'>",
+   "<class 'str'>",
+   "<class 'float'>",
+   "<class 'bool'>"
+  ]
+ },
+ {
+  "zorluk": "kolay",
+  "soru": "len('Python') kaç döndürür?",
+  "dogru": "6",
+  "secenekler": [
+   "6",
+   "5",
+   "7",
+   "4"
+  ]
+ },
+ {
+  "zorluk": "kolay",
+  "soru": "7 // 2 işleminin sonucu nedir?",
+  "dogru": "3",
+  "secenekler": [
+   "3",
+   "3.5",
+   "4",
+   "2"
+  ]
+ },
+ {
+  "zorluk": "kolay",
+  "soru": "Bir metni tam sayıya çeviren fonksiyon hangisidir?",
+  "dogru": "int()",
+  "secenekler": [
+   "int()",
+   "str()",
+   "float()",
+   "chr()"
+  ]
+ },
+ {
+  "zorluk": "kolay",
+  "soru": "Hangisi geçerli bir değişken adıdır?",
+  "dogru": "_sayi",
+  "secenekler": [
+   "_sayi",
+   "2sayi",
+   "my-var",
+   "class"
+  ]
+ },
+ {
+  "zorluk": "kolay",
+  "soru": "2 ** 3 işleminin sonucu nedir?",
+  "dogru": "8",
+  "secenekler": [
+   "8",
+   "6",
+   "9",
+   "5"
+  ]
+ },
+ {
+  "zorluk": "kolay",
+  "soru": "Koşul kontrolü için hangi anahtar kelime kullanılır?",
+  "dogru": "if",
+  "secenekler": [
+   "if",
+   "when",
+   "unless",
+   "check"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "[x*2 for x in range(3)] ifadesinin sonucu nedir?",
+  "dogru": "[0, 2, 4]",
+  "secenekler": [
+   "[0, 2, 4]",
+   "[2, 4, 6]",
+   "[0, 1, 2]",
+   "[0, 2, 4, 6]"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "Sözlükte anahtar yoksa hata vermeden değer almak için ne kullanılır?",
+  "dogru": "dict.get()",
+  "secenekler": [
+   "dict.get()",
+   "dict.find()",
+   "dict.fetch()",
+   "dict.seek()"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "Tuple'ın temel özelliği nedir?",
+  "dogru": "Değiştirilemez (immutable)",
+  "secenekler": [
+   "Değiştirilemez (immutable)",
+   "Sadece sayı tutar",
+   "Tekrarlı eleman kabul etmez",
+   "Süslü parantezle tanımlanır"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "len(set([1, 2, 2, 3])) kaç döndürür?",
+  "dogru": "3",
+  "secenekler": [
+   "3",
+   "4",
+   "2",
+   "1"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "'abc'[::-1] ifadesinin sonucu nedir?",
+  "dogru": "'cba'",
+  "secenekler": [
+   "'cba'",
+   "'abc'",
+   "'bca'",
+   "'acb'"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "with open(...) kullanmanın ana faydası nedir?",
+  "dogru": "Dosyayı otomatik kapatır",
+  "secenekler": [
+   "Dosyayı otomatik kapatır",
+   "Dosyayı şifreler",
+   "Okumayı hızlandırır",
+   "Belleği artırır"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "lambda ne işe yarar?",
+  "dogru": "Anonim (isimsiz) fonksiyon tanımlar",
+  "secenekler": [
+   "Anonim (isimsiz) fonksiyon tanımlar",
+   "Döngü başlatır",
+   "Sınıf tanımlar",
+   "Modül içe aktarır"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "*args neyi temsil eder?",
+  "dogru": "Değişken sayıda konumsal argüman",
+  "secenekler": [
+   "Değişken sayıda konumsal argüman",
+   "Anahtar-değer argümanları",
+   "Sabit çarpan",
+   "Bellek işaretçisi"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "try/except yapısı ne için kullanılır?",
+  "dogru": "Hataları yakalamak için",
+  "secenekler": [
+   "Hataları yakalamak için",
+   "Döngüyü kırmak için",
+   "Tip dönüştürmek için",
+   "Modül yüklemek için"
+  ]
+ },
+ {
+  "zorluk": "orta",
+  "soru": "'is' ve '==' arasındaki fark nedir?",
+  "dogru": "'is' kimliği, '==' değeri karşılaştırır",
+  "secenekler": [
+   "'is' kimliği, '==' değeri karşılaştırır",
+   "'is' değeri, '==' kimliği karşılaştırır",
+   "İkisi birebir aynıdır",
+   "'is' sadece sayılarda çalışır"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "def f(a, l=[]): l.append(a); return l  — f(1) sonra f(2) çağrılırsa ikinci sonuç nedir?",
+  "dogru": "[1, 2]",
+  "secenekler": [
+   "[1, 2]",
+   "[2]",
+   "[1]",
+   "Hata verir"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "CPython'daki GIL ne yapar?",
+  "dogru": "Aynı anda yalnızca bir thread'in bayt kodu çalıştırmasına izin verir",
+  "secenekler": [
+   "Aynı anda yalnızca bir thread'in bayt kodu çalıştırmasına izin verir",
+   "Belleği otomatik temizler",
+   "Tip kontrolü yapar",
+   "Modülleri önbelleğe alır"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "'yield' anahtar kelimesi ne sağlar?",
+  "dogru": "Değerleri tembel (lazy) üreten generator oluşturur",
+  "secenekler": [
+   "Değerleri tembel (lazy) üreten generator oluşturur",
+   "Fonksiyonu sonlandırıp hata fırlatır",
+   "Global değişken tanımlar",
+   "Sınıf kalıtımı sağlar"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "Bir sınıftaki __init__ metodunun rolü nedir?",
+  "dogru": "Oluşturulan nesneyi başlatır",
+  "secenekler": [
+   "Oluşturulan nesneyi başlatır",
+   "Nesneyi yok eder",
+   "Sınıf metodunu tanımlar",
+   "Modülü içe aktarır"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "@staticmethod ile tanımlanan metodun özelliği nedir?",
+  "dogru": "self veya cls almaz",
+  "secenekler": [
+   "self veya cls almaz",
+   "Her zaman özel (private) olur",
+   "Sadece sınıf içinde çağrılabilir",
+   "Otomatik olarak önbelleklenir"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "Decorator nedir?",
+  "dogru": "Bir fonksiyonu sarmalayıp davranışını genişleten yapı",
+  "secenekler": [
+   "Bir fonksiyonu sarmalayıp davranışını genişleten yapı",
+   "Sınıfı silen yapı",
+   "Değişken tipi belirten ifade",
+   "Döngü kısaltması"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "copy.deepcopy ile copy.copy arasındaki fark nedir?",
+  "dogru": "deepcopy iç içe nesneleri de kopyalar",
+  "secenekler": [
+   "deepcopy iç içe nesneleri de kopyalar",
+   "deepcopy daha hızlıdır",
+   "copy sadece sayılarda çalışır",
+   "Fark yoktur"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "Python'da MRO neyi belirler?",
+  "dogru": "Çoklu kalıtımda metot arama sırasını",
+  "secenekler": [
+   "Çoklu kalıtımda metot arama sırasını",
+   "Bellek ayırma sırasını",
+   "Modül yükleme sırasını",
+   "Döngü hızını"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "a = [1]; b = [1]; a is b ifadesinin sonucu nedir?",
+  "dogru": "False",
+  "secenekler": [
+   "False",
+   "True",
+   "Hata verir",
+   "None"
+  ]
+ },
+ {
+  "zorluk": "zor",
+  "soru": "0.1 + 0.2 == 0.3 ifadesinin sonucu nedir?",
+  "dogru": "False",
+  "secenekler": [
+   "False",
+   "True",
+   "Hata verir",
+   "None"
+  ]
+ }
+]

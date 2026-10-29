@@ -1,2 +1,22 @@
-- name: Build apk
-  uses: MirkoMajkicProductDock/BuildAPK@v0.0.1
+name: Build APK
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Kodları Al
+        uses: actions/checkout@v4
+
+      - name: APK Derle (BuildAPK Eklentisi)
+        uses: MirkoMajkicProductDock/BuildAPK@v0.0.1
+
+      - name: APK Dosyasını Kaydet (Artifacts)
+        uses: actions/upload-artifact@v4
+        with:
+          name: quiz-apk-dosyasi
+          path: bin/*.apk

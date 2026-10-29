@@ -21,9 +21,16 @@ RENK_YANLIS = (0.8, 0.2, 0.2, 1)
 
 
 def sorulari_yukle():
-    yol = os.path.join(os.path.dirname(os.path.abspath(__file__)), "questions.json")
-    with open(yol, encoding="utf-8") as f:
-        return json.load(f)
+    # Android ve masaüstü uyumlu güvenli dosya okuma yolu
+    dosya_adlari = ["questions.json", os.path.join(os.path.dirname(os.path.abspath(__file__)), "questions.json")]
+    for yol in dosya_adlari:
+        try:
+            if os.path.exists(yol):
+                with open(yol, encoding="utf-8") as f:
+                    return json.load(f)
+        except Exception:
+            continue
+    return []
 
 
 def yazi(text, size=18, height=None, bold=False):
@@ -83,6 +90,8 @@ class SoruEkrani(Screen):
 
     def goster(self):
         app = App.get_running_app()
+        if not app.sorular:
+            return
         s = app.sorular[app.indeks]
         secenekler = s["secenekler"][:]
         random.shuffle(secenekler)
@@ -163,7 +172,7 @@ class SinavApp(App):
     def baslat(self, zorluk):
         self.zorluk = zorluk
         havuz = [q for q in self.tum_sorular if q["zorluk"] == zorluk]
-        self.sorular = random.sample(havuz, min(SORU_SAYISI, len(havuz)))
+        self.sorular = random.sample(havuz, min(SORU_SAYISI, len(havuz))) if havuz else []
         self.indeks = 0
         self.dogru = 0
         self.yanlis = 0
